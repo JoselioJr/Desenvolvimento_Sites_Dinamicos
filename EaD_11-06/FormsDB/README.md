@@ -55,7 +55,7 @@ Sistema web desenvolvido em Java utilizando Spring MVC para cadastro e gerenciam
 2. **Acesse a aplicação**
    - Abra o navegador e acesse: `http://localhost:8080/spring-mvc-forms-db/`
 
-### 4. Verificação
+### 3. Verificação
 
 - Se tudo estiver configurado corretamente, você verá a página inicial da aplicação
 - As tabelas do banco de dados serão criadas automaticamente pelo JPA/Hibernate
