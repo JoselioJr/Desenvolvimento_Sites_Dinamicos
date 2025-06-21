@@ -1,0 +1,7 @@
+com\cursos\controller\AlunoCursoController.class
+com\cursos\repository\AlunoRepository.class
+com\cursos\SpringbootAlunoCursoApplication.class
+com\cursos\model\Aluno.class
+com\cursos\repository\CursoRepository.class
+com\cursos\service\AlunoCursoService.class
+com\cursos\model\Curso.class
