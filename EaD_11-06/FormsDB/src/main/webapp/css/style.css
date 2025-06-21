@@ -1,0 +1,220 @@
+/* style.css */
+
+/* Ajustes gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px; /* fonte menor que antes */
+    color: #333333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #004F26;
+    color: white;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #009639;
+    box-sizing: border-box;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Navegação (menu) */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1.5px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-weight: 500;
+}
+
+header nav a:hover, 
+header nav a:focus {
+    background-color: #009639;
+    border-color: #ffffff;
+    outline: none;
+}
+
+/* Menu com divisões (borda lateral entre links) */
+header nav a:not(:last-child) {
+    border-right: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Main (conteúdo) */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 24px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #004F26;
+    margin-bottom: 1rem;
+}
+
+/* Tabela produtos */
+.produtos-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.produtos-tabela th,
+.produtos-tabela td {
+    border: 1px solid #ddd;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.produtos-tabela thead {
+    background-color: #004F26;
+    color: white;
+}
+
+.produtos-tabela tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.produtos-tabela tbody tr:hover {
+    background-color: #d7f0d7; /* verde clarinho para hover */
+}
+
+/* Botões */
+button, .btn-voltar {
+    background-color: #004F26;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+button:hover, .btn-voltar:hover,
+button:focus, .btn-voltar:focus {
+    background-color: #009639;
+    outline: none;
+}
+
+/* Rodapé alinhado ao header */
+footer {
+    background-color: #004F26;
+    color: white;
+    text-align: center;
+    padding: 12px 24px;
+    border-top: 3px solid #009639;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Links dentro da tabela (arquivo) */
+.produtos-tabela a {
+    color: #004F26;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.produtos-tabela a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para inputs do form */
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #009639;
+    outline: none;
+}
+
+/* Espaçamento form */
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+/* Paginação */
+.paginacao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.paginacao a, .paginacao .pagina-atual {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #004F26;
+    font-weight: 500;
+}
+
+.paginacao a:hover {
+    background-color: #009639;
+    color: white;
+    border-color: #009639;
+}
+
+.paginacao .pagina-atual {
+    background-color: #004F26;
+    color: white;
+    border-color: #004F26;
+}
+
+/* Media query para responsividade simples */
+@media (max-width: 600px) {
+    main {
+        margin: 10px 12px;
+        padding: 16px;
+    }
+    header nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
